@@ -1,0 +1,13 @@
+stable sort VS unstable sort
+agar elemnts ka order preserve ho rha to stable slort
+agar order preserve nhi ho rha to unstable sort
+
+4 (3) [3] 2 1
+
+after sorting 
+1 2 (3) [3] 4 
+
+this is stable sort as order of 3 is preserved
+
+else case me unstable sort
+1 2 [3] (3) 4 

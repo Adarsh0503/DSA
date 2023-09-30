@@ -4,6 +4,13 @@ using namespace std;
 
 
 // log(n) time complexity
+// n->size of array
+
+// inbuild binarysearch also
+// #include<algorithm>
+//  binarySearch(arr,arr+n,target);
+//  binarySearch(v.begin(),v.end(),target);
+
 
 
 int binarySearch(vector<int>&arr, int target){

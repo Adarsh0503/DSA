@@ -27,7 +27,7 @@ int main(){
 
     cin.getline(ch,20);
 
-    cout<<ch<<endl;;
+    cout<<ch<<endl;
 
     reverseString(ch);
     cout<<"after reversing the string : "<<ch;

@@ -1,44 +1,34 @@
 #include<iostream>
 #include<vector>
 #include<limits>
+
 using namespace std;
 
-int maxSum(vector<int>&arr, int i){
-    
-    int sum=0;
-    int ans=INT16_MIN;
+void maxSum(vector<int>&arr, int i, int sum, int&maxi){
 
-
-    if(i>arr.size()-1){
-
-        return f;
+    // base case
+    if(i>=arr.size()){
+        maxi=max(maxi,sum);
+        return;
     }
 
 
-    for(int i=0;i<arr.size();i++){
-        // include
-        ans=maxSum(arr,i+2);
-        sum=sum+arr[i];
-
-        // exclude
-        ans=maxSum(arr,i+1);
-        
-    }
-
-    return ans;
-    
+    // inclusion
+    maxSum(arr,i+2,sum+arr[i],maxi);
 
 
-
-
-
-
+    //exclusion
+    maxSum(arr,i+1,sum,maxi);
 }
 
 int main(){
 
-    vector<int>arr={2,1,4,9};
-    int i=0;
-    int answer= maxSum(arr,i);
-    cout<<answer<<endl;
+    vector<int>arr={1,2,3,1,3,5,8,1,9};
+    int sum=0;
+    int maxi=INT_FAST16_MIN;
+    int i=0;    
+
+    maxSum(arr,i,sum,maxi);
+
+    cout<<maxi;
 }

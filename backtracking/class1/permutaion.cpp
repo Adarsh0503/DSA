@@ -16,7 +16,7 @@ void permut(string&str, int i){
 
         permut(str,i+1);
 
-        // backtracking 
+        // backtracking   -- why? 
          swap(str[i],str[j]);
 
 
@@ -27,7 +27,7 @@ void permut(string&str, int i){
 }
 
 int main(){
-    string str="abc";
+    string str="aba";
 
     int i=0;
 

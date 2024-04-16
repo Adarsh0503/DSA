@@ -2,6 +2,10 @@
 #include<vector>
 using namespace std;
 
+// used when array size is small
+//minimum elenment ko select krke shi kgah daal dete ho
+
+
 void selectionSort(vector<int>&arr){
 
 

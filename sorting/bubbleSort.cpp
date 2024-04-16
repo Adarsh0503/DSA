@@ -2,6 +2,14 @@
 #include<vector>
 using namespace std;
 
+
+
+//also known as sinking sort
+
+//bubble sort kom use tab krte hai tab
+// ith largest element ko uski shi position par le aao.
+
+
 void bubbleSort(vector<int>&arr){
 
     for(int i=0;i<arr.size()-1;i++){
